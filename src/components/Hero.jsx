@@ -5,7 +5,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-flex items-center px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6">
-              <span className="text-emerald-400 text-sm font-medium">WEB DEVELOPER</span>
+              <span className="text-emerald-400 text-sm font-medium">FULL STACK WEB DEVELOPER</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Hi, I'm <span className="bg-gradient-to-r from-emerald-400 to-green-500 bg-clip-text text-transparent">Zeeshan Haider</span>
