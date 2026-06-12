@@ -20,9 +20,14 @@ const Navbar = () => {
             <a href="#skills" className="text-gray-300 hover:text-emerald-400 transition-colors font-medium">Skills</a>
             <a href="#projects" className="text-gray-300 hover:text-emerald-400 transition-colors font-medium">Projects</a>
             <a href="#contact" className="text-gray-300 hover:text-emerald-400 transition-colors font-medium">Contact</a>
-            <a href="https://www.linkedin.com/in/zeeshan-haider-b417b2407/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-gradient-to-r from-emerald-600 to-cyan-600 rounded-lg hover:from-emerald-700 hover:to-cyan-700 transition-all font-medium text-sm border border-emerald-500/20">
-              View LinkedIn
-            </a>
+            <div className="flex items-center space-x-3">
+              <a href="https://www.linkedin.com/in/zeeshan-haider-b417b2407/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-gradient-to-r from-emerald-600 to-cyan-600 rounded-lg hover:from-emerald-700 hover:to-cyan-700 transition-all font-medium text-sm border border-emerald-500/20">
+                View LinkedIn
+              </a>
+              <a href="/Zeeshan.png" target="_blank" rel="noopener noreferrer" className="px-4 py-2 border border-gray-700 rounded-lg hover:border-emerald-500 hover:text-emerald-400 transition-all font-medium text-sm">
+                Open Resume
+              </a>
+            </div>
           </div>
           
           {/* Mobile Menu Button */}
@@ -84,15 +89,26 @@ const Navbar = () => {
             >
               Contact
             </a>
-            <a 
-              href="https://www.linkedin.com/in/zeeshan-haider-b417b2407/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              onClick={() => setIsMenuOpen(false)}
-              className="block px-3 py-2 mt-2 rounded-md text-base font-medium bg-gradient-to-r from-emerald-600 to-cyan-600 text-white hover:from-emerald-700 hover:to-cyan-700 transition-all"
-            >
-              View LinkedIn
-            </a>
+            <div className="space-y-2 pt-2">
+              <a 
+                href="https://www.linkedin.com/in/zeeshan-haider-b417b2407/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className="block px-3 py-2 rounded-md text-base font-medium bg-gradient-to-r from-emerald-600 to-cyan-600 text-white hover:from-emerald-700 hover:to-cyan-700 transition-all text-center"
+              >
+                View LinkedIn
+              </a>
+              <a 
+                href="/Zeeshan.png" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className="block px-3 py-2 rounded-md text-base font-medium border border-gray-700 text-gray-300 hover:border-emerald-500 hover:text-emerald-400 transition-all text-center"
+              >
+                Open Resume
+              </a>
+            </div>
           </div>
         </div>
       )}
